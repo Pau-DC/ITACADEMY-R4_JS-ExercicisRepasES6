@@ -1,0 +1,81 @@
+  <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- JS -->
+    <script src="js/mainFunctions.js" async></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+
+    <!-- Other -->
+    <title>EXERCICI 9</title>
+  </head>
+  <body>
+    <!-- Content starts here -->
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-light">
+      <a href="/" class="navbar-brand">
+        CERCADOR DE NOMS
+      </a>
+    </nav>
+
+    <div class="container">
+      <!-- APPLICATION -->
+      <div id="App" class="row pt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>FILTRE</h4>
+            </div>
+            <form id="noms-form" class="card-body">
+              <div class="form-group">
+                <input type="text" id="starts-with-filtre" class="form-control" placeholder="Insereix aquí el nom"/>
+              </div>
+              <div class="text-center text-small">(Es mostren <span id="num-registres">0 entrades</span>)</div>
+            </form>
+          </div>          
+        </div>
+        <div id="llista-noms" class="col-md-8">
+          <div class="card text-center mb-4">
+            <div class="card-header">
+              <h4>NOMS MÉS POSATS (2019)</h4>
+            </div>
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th id="th-nom" scope="col" style="width:40%">NOM</th>
+                    <th id="th-sexe" scope="col" style="width:17%">SEXE</th>
+                    <th id="th-pos" scope="col" style="widows: 17%;">POSICIÓ</th>
+                    <th id="th-freq" scope="col" style="width:26%">FREQÜÈNCIA / ‰</th>
+                  </tr>
+                </thead>
+                <tbody id="noms-canvas">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="card-footer bg-light footer-font-style text-muted footer-position">
+      <span class="text-center">Dades extretes de l'IDESCAT: <a href="http://www.idescat.cat/nadons/" target="_blank" >Noms més freqüents dels nadons. 2019</a></span><br/>
+      <span>Nota: el ‰ ha estat calculat sobre el total de nascuts vius a l'any i en el lloc de residència seleccionats. | Només es mostren els noms de freqüència igual o superior a 4.</br></span>
+    </footer>
+
+    <!-- Content ends here -->
+  </body>
+</html>
